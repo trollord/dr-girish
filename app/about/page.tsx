@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Award, CheckCircle, GraduationCap, Heart, Star, Users } from "lucide-react";
-import SurgeryBanner from "@/components/sections/SurgeryBanner";
 
 export const metadata: Metadata = {
   title: "About Dr. Girish N. Mirajkar | MCh (Gold Medal) DrNB Plastic Surgeon Mumbai",
@@ -108,8 +107,8 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-[#C9A96E]/20 shadow-2xl shadow-black/30">
                 <Image
-                  src="/doctor-formal.jpg"
-                  alt="Dr. Girish N. Mirajkar — Consultant Plastic Surgeon"
+                  src="/doctor-surgery.jpg"
+                  alt="Dr. Girish in the operating theatre"
                   fill
                   className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -166,8 +165,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── Surgery Banner ─── */}
-      <SurgeryBanner />
 
       {/* ─── Education Timeline ─── */}
       <section className="py-20 bg-[#0f1a2e]">

@@ -3,7 +3,6 @@ import Hero from "@/components/sections/Hero";
 import AboutPreview from "@/components/sections/AboutPreview";
 import ProceduresGrid from "@/components/sections/ProceduresGrid";
 import Stats from "@/components/sections/Stats";
-import SurgeryBanner from "@/components/sections/SurgeryBanner";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import GalleryPreview from "@/components/sections/GalleryPreview";
 import Testimonials from "@/components/sections/Testimonials";
@@ -26,7 +25,6 @@ export default function HomePage() {
       <AboutPreview />
       <ProceduresGrid />
       <Stats />
-      <SurgeryBanner />
       <WhyChooseUs />
       <GalleryPreview />
       <Testimonials />
