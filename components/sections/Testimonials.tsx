@@ -8,31 +8,31 @@ const testimonials = [
     name: "Priya S.",
     procedure: "Rhinoplasty",
     rating: 5,
-    text: "Dr. Girish N. Mirajkar completely transformed my confidence. The results are so natural — nobody can tell I've had surgery. The whole team was professional and caring throughout.",
+    text: "Dr. Girish completely transformed my confidence. The results are so natural — nobody can tell I've had surgery. The whole team was professional and caring throughout.",
   },
   {
     name: "Anita R.",
     procedure: "Breast Augmentation",
     rating: 5,
-    text: "I was nervous at first, but Dr. Girish N. Mirajkar took the time to explain everything in detail. The consultation was thorough and the results exceeded my expectations. Highly recommend!",
+    text: "I was nervous at first, but Dr. Girish took the time to explain everything in detail. The consultation was thorough and the results exceeded my expectations. Highly recommend!",
   },
   {
     name: "Meera K.",
     procedure: "Liposuction",
     rating: 5,
-    text: "After two children, I wanted my body back. Dr. Girish N. Mirajkar listened to my goals and delivered results I didn't think were possible. Recovery was faster than expected.",
+    text: "After two children, I wanted my body back. Dr. Girish listened to my goals and delivered results I didn't think were possible. Recovery was faster than expected.",
   },
   {
     name: "Rahul M.",
     procedure: "FUE Hair Transplant",
     rating: 5,
-    text: "I had tried many things before. Dr. Girish N. Mirajkar's hair transplant changed everything — the density and hairline look completely natural. Best decision I've made.",
+    text: "I had tried many things before. Dr. Girish's hair transplant changed everything — the density and hairline look completely natural. Best decision I've made.",
   },
   {
     name: "Sunita P.",
     procedure: "Facelift",
     rating: 5,
-    text: "At 52, I look the best I've ever felt. Dr. Girish N. Mirajkar's artistry is exceptional — subtle, natural, and beautifully done. The entire experience was world-class.",
+    text: "At 52, I look the best I've ever felt. Dr. Girish's artistry is exceptional — subtle, natural, and beautifully done. The entire experience was world-class.",
   },
 ];
 

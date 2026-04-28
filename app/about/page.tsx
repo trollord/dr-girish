@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Award, CheckCircle, GraduationCap, Heart, Star, Users } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -64,7 +65,7 @@ const philosophyPoints = [
   },
   {
     title: "Natural Results",
-    desc: "True artistry means enhancing what is already beautiful — not replacing it. Dr. Girish N. Mirajkar's signature is results that look unmistakably natural.",
+    desc: "True artistry means enhancing what is already beautiful — not replacing it. Dr. Girish's signature is results that look unmistakably natural.",
     icon: Star,
   },
   {
@@ -102,16 +103,17 @@ export default function AboutPage() {
       <section className="py-20 bg-[#0f1a2e]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-14 items-center">
-            {/* Image placeholder */}
+            {/* Doctor Photo */}
             <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-[#1a2a45] via-[#243355] to-[#1a2a45] border border-[#243355] flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <div className="w-24 h-24 rounded-full bg-[#C9A96E]/20 border-2 border-[#C9A96E]/40 flex items-center justify-center mx-auto mb-4">
-                    <span className="font-serif text-3xl text-[#C9A96E]">G</span>
-                  </div>
-                  <p className="text-[#94a3b8] text-sm font-sans">Dr. Girish N. Mirajkar</p>
-                  <p className="text-[#C9A96E] text-xs font-sans mt-1">Photo Coming Soon</p>
-                </div>
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-[#C9A96E]/20 shadow-2xl shadow-black/30">
+                <Image
+                  src="/doctor-formal.jpg"
+                  alt="Dr. Girish N. Mirajkar — Consultant Plastic Surgeon"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a2e]/30 via-transparent to-transparent pointer-events-none" />
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-4 -right-4 bg-[#C9A96E] text-[#0f1a2e] rounded-xl px-5 py-3 shadow-xl">
@@ -128,14 +130,14 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#94a3b8] font-sans leading-relaxed">
                 <p>
-                  Dr. Girish N. Mirajkar is a Board Certified MCh Plastic Surgeon based in Mumbai,
+                  Dr. Girish is a Board Certified MCh Plastic Surgeon based in Mumbai,
                   India, with over a decade of specialised experience in aesthetic and reconstructive
                   surgery. His practice is built on a singular philosophy: every patient deserves
                   results that feel as natural as they look.
                 </p>
                 <p>
                   Trained at some of India's most prestigious institutions — including Grant Medical
-                  College, KEM Hospital, and LTMMC — Dr. Girish N. Mirajkar brings together rigorous academic
+                  College, KEM Hospital, and LTMMC — Dr. Girish brings together a rigorous academic
                   foundation and refined surgical artistry. He has performed thousands of successful
                   procedures ranging from rhinoplasty and facelifts to advanced body contouring and
                   hair restoration.
@@ -147,7 +149,7 @@ export default function AboutPage() {
                   in South Korea.
                 </p>
                 <p>
-                  Beyond the operating theatre, Dr. Girish N. Mirajkar is known for his calm, empathetic
+                  Beyond the operating theatre, Dr. Girish is known for his calm, empathetic
                   consultation style — taking time to understand each patient's unique anatomy,
                   lifestyle, and aspirations before crafting a personalised surgical plan.
                 </p>
@@ -243,7 +245,7 @@ export default function AboutPage() {
               Our Ethos
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#FAFAFA] mb-4">
-              The Dr. Girish N. Mirajkar Philosophy
+              The Dr. Girish Philosophy
             </h2>
             <p className="text-[#94a3b8] font-sans max-w-2xl mx-auto">
               Every decision in our practice stems from four core principles that guide how we think,
@@ -274,7 +276,7 @@ export default function AboutPage() {
             Ready to Begin Your Journey?
           </h2>
           <p className="text-[#94a3b8] font-sans mb-8 leading-relaxed">
-            Schedule a private consultation with Dr. Girish N. Mirajkar and take the first step toward the
+            Schedule a private consultation with Dr. Girish and take the first step toward the
             results you've envisioned.
           </p>
           <Link

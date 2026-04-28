@@ -9,7 +9,7 @@ const procedures = [
 ];
 
 const quickLinks = [
-  { label: "About Dr. Girish N. Mirajkar", href: "/about" },
+  { label: "About Dr. Girish", href: "/about" },
   { label: "Before & After Gallery", href: "/gallery" },
   { label: "Patient Testimonials", href: "/testimonials" },
   { label: "Blog & Articles", href: "/blog" },
@@ -111,9 +111,8 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin size={16} className="text-[#C9A96E] mt-0.5 shrink-0" />
                 <span className="text-sm text-[#94a3b8] font-sans leading-relaxed">
-                  123 Medical Centre, Bandra West,
-                  <br />
-                  Mumbai, Maharashtra 400050
+                  Aesthetic Surgery Centre,<br />
+                  Mumbai, Maharashtra
                 </span>
               </li>
               <li className="flex gap-3 items-center">
@@ -122,7 +121,7 @@ export default function Footer() {
                   href="tel:+919876543210"
                   className="text-sm text-[#94a3b8] hover:text-[#C9A96E] transition-colors font-sans"
                 >
-                  +91 98765 43210
+                  [Contact number to be updated]
                 </a>
               </li>
               <li className="flex gap-3 items-center">
@@ -131,7 +130,7 @@ export default function Footer() {
                   href="mailto:info@drgirish.com"
                   className="text-sm text-[#94a3b8] hover:text-[#C9A96E] transition-colors font-sans"
                 >
-                  info@drgirish.com
+                  [Email to be updated]
                 </a>
               </li>
             </ul>

@@ -16,11 +16,11 @@ const procedures = [
 
 const faqs = [
   { q: 'How long do face procedure results last?', a: 'Rhinoplasty results are permanent. Facelifts typically last 8-12 years. Blepharoplasty lasts 10+ years. Lip fillers last 9-18 months; fat transfer is long-lasting to permanent.' },
-  { q: 'Will there be visible scarring after facial surgery?', a: 'Dr. Girish N. Mirajkar places all incisions strategically within natural skin creases or inside the nostrils, making scars virtually invisible once fully healed.' },
+  { q: 'Will there be visible scarring after facial surgery?', a: 'Dr. Girish places all incisions strategically within natural skin creases or inside the nostrils, making scars virtually invisible once fully healed.' },
   { q: 'What is the minimum age for facial procedures?', a: 'Rhinoplasty is recommended after 17-18 years when nasal growth is complete. Facelifts and blepharoplasty are typically performed on adults 30+.' },
   { q: 'Can multiple facial procedures be combined?', a: 'Yes. Combining procedures is common — one anaesthetic, one recovery period, and harmonious combined results.' },
   { q: 'How do I prepare for facial surgery?', a: 'Stop smoking 4 weeks prior, avoid blood thinners 2 weeks prior, arrange a recovery companion, and follow fasting instructions.' },
-  { q: 'Is a virtual consultation available?', a: 'Yes. Dr. Girish N. Mirajkar offers online consultations for patients outside Mumbai covering photo analysis, procedure discussion, and preliminary planning.' },
+  { q: 'Is a virtual consultation available?', a: 'Yes. Dr. Girish offers online consultations for patients outside Mumbai covering photo analysis, procedure discussion, and preliminary planning.' },
 ];
 
 export default function FaceProceduresPage() {
@@ -134,7 +134,7 @@ export default function FaceProceduresPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl sm:text-4xl text-[#FAFAFA] mb-5">Take the First Step</h2>
           <p className="text-[#94a3b8] font-sans mb-8 leading-relaxed">
-            Consult with Dr. Girish N. Mirajkar to discuss your facial goals and receive a personalised treatment plan.
+            Consult with Dr. Girish to discuss your facial goals and receive a personalised treatment plan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-block bg-[#C9A96E] hover:bg-[#D4B483] text-[#0f1a2e] font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">

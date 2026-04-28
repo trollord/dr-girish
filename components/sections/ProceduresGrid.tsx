@@ -7,8 +7,8 @@ const procedures = [
     subtitle: "Facial Procedures",
     href: "/procedures/face",
     description:
-      "Rhinoplasty, facelift, eyelid surgery, and lip augmentation — restore youth and refine features.",
-    items: ["Rhinoplasty", "Facelift", "Blepharoplasty", "Lip Augmentation"],
+      "Surgical and non-surgical facial procedures — from rhinoplasty and facelifts to Botox, fillers, and thread-lifts for a naturally refined appearance.",
+    items: ["Rhinoplasty (Nose Job)", "Facelift", "Brow-Lift", "Blepharoplasty", "Dimple Creation", "Botox & Fillers"],
     gradient: "from-[#1a2a45] to-[#0f1a2e]",
     icon: "👤",
   },
@@ -17,8 +17,8 @@ const procedures = [
     subtitle: "Breast Procedures",
     href: "/procedures/breast",
     description:
-      "Expert breast augmentation, reduction, and lift procedures tailored to your aesthetic goals.",
-    items: ["Augmentation", "Reduction", "Lift", "Reconstruction"],
+      "Expert breast procedures tailored to your frame and goals — augmentation, reduction, lift, nipple correction, and combined augmentation mastopexy.",
+    items: ["Breast Augmentation", "Breast Reduction", "Mastopexy (Breast-lift)", "Nipple Inversion Correction", "Augmentation Mastopexy"],
     gradient: "from-[#1a2a45] to-[#0f1a2e]",
     icon: "✦",
   },
@@ -27,8 +27,8 @@ const procedures = [
     subtitle: "Body Contouring",
     href: "/procedures/body",
     description:
-      "Sculpt and refine your silhouette with liposuction, tummy tuck, and mommy makeover.",
-    items: ["Liposuction", "Tummy Tuck", "Mommy Makeover", "Arm Lift"],
+      "Sculpt and refine your silhouette — from 360° liposuction and tummy tuck to mommy makeover, gynaecomastia correction, and post weight loss surgery.",
+    items: ["360° Liposuction", "Tummy Tuck", "Total Mommy-Makeover", "Gynaecomastia", "Thigh Lift", "Arm Fat Reduction"],
     gradient: "from-[#1a2a45] to-[#0f1a2e]",
     icon: "◈",
   },
@@ -37,10 +37,40 @@ const procedures = [
     subtitle: "Hair Restoration",
     href: "/procedures/hair-restoration",
     description:
-      "Natural-looking hair restoration with advanced FUE transplant and PRP therapy.",
-    items: ["FUE Transplant", "PRP Therapy", "Hairline Design", "Beard Transplant"],
+      "Natural-looking hair restoration with advanced transplant techniques for scalp and beard alike.",
+    items: ["Hair Transplant", "FUE Transplant", "Hairline Design", "Beard Transplant"],
     gradient: "from-[#1a2a45] to-[#0f1a2e]",
     icon: "◎",
+  },
+  {
+    title: "Ears",
+    subtitle: "Ear Aesthetics",
+    href: "/procedures/face",
+    description:
+      "Specialized procedures for ear aesthetics — prominent ear correction, Stahl's ear, lobuloplasty, and keloid treatment after piercings.",
+    items: ["Prominent Ears Correction", "Stahl's Ear", "Lobuloplasty", "Keloid Treatment"],
+    gradient: "from-[#1a2a45] to-[#0f1a2e]",
+    icon: "◉",
+  },
+  {
+    title: "Scars",
+    subtitle: "Scar Revision",
+    href: "/procedures/body",
+    description:
+      "Advanced scar revision for facial scars, C-section scars, acne scars, body scars, and fat transfer for scar improvement.",
+    items: ["Facial Scars", "C-Section Scars", "Acne Scars", "Fat Transfer for Scars", "Buccal Fat Removal"],
+    gradient: "from-[#1a2a45] to-[#0f1a2e]",
+    icon: "✸",
+  },
+  {
+    title: "Gynaecology",
+    subtitle: "Aesthetic Gynaecology",
+    href: "/procedures/body",
+    description:
+      "Private, sensitive aesthetic gynaecology procedures performed with utmost discretion and care.",
+    items: ["Labia Reduction", "Vaginal Rejuvenation"],
+    gradient: "from-[#1a2a45] to-[#0f1a2e]",
+    icon: "◇",
   },
 ];
 
@@ -64,10 +94,10 @@ export default function ProceduresGrid() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {procedures.map((proc) => (
             <Link key={proc.title} href={proc.href} className="group block">
-              <div className="h-full bg-[#1a2a45] border border-[#243355] rounded-2xl p-6 hover:border-[#C9A96E]/40 hover:shadow-lg hover:shadow-[#C9A96E]/5 transition-all duration-300 flex flex-col">
+              <div className="h-full bg-[#1a2a45] border border-[#243355] rounded-2xl p-6 hover:border-[#C9A96E]/40 hover:shadow-lg hover:shadow-[#C9A96E]/5 hover:-translate-y-1 transition-all duration-300 flex flex-col">
                 {/* Icon */}
                 <div className="w-12 h-12 rounded-xl bg-[#C9A96E]/10 border border-[#C9A96E]/20 flex items-center justify-center text-xl mb-5 group-hover:bg-[#C9A96E]/15 transition-colors">
                   <span>{proc.icon}</span>

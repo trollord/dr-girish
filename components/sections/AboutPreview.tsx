@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Award, GraduationCap, Stethoscope, ArrowRight } from "lucide-react";
 
 const credentials = [
@@ -17,34 +18,20 @@ export default function AboutPreview() {
     <section className="py-16 sm:py-24 bg-[#0f1a2e] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
-          {/* Image placeholder */}
+          {/* Image */}
           <div ref={ref} className="relative">
-            <div className="relative rounded-2xl overflow-hidden bg-[#1a2a45] aspect-[4/5] max-w-md mx-auto lg:mx-0">
-              {/* Placeholder gradient simulating a professional photo */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(160deg, #1a2a45 0%, #243355 50%, #1a2a45 100%)",
-                }}
+            <div className="relative rounded-2xl overflow-hidden max-w-md mx-auto lg:mx-0 aspect-[4/5]">
+              <Image
+                src="/doctor-office.jpg"
+                alt="Dr. Girish — Plastic Surgeon in clinic"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 rounded-full bg-[#243355] border-2 border-[#C9A96E]/30 flex items-center justify-center mx-auto mb-4">
-                    <span className="font-serif text-3xl text-[#C9A96E] font-bold">
-                      G
-                    </span>
-                  </div>
-                  <p className="text-[#94a3b8] text-sm font-sans">
-                    Dr. Girish N. Mirajkar
-                  </p>
-                  <p className="text-[#C9A96E] text-xs font-sans uppercase tracking-wide mt-1">
-                    Replace with actual photo
-                  </p>
-                </div>
-              </div>
               {/* Gold border accent */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#C9A96E] to-transparent" />
+              {/* Subtle overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a2e]/30 via-transparent to-transparent pointer-events-none" />
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-5 right-2 sm:-bottom-6 sm:-right-4 lg:right-0 bg-[#1a2a45] border border-[#243355] rounded-xl px-4 sm:px-5 py-3 sm:py-4 shadow-xl">
@@ -60,7 +47,7 @@ export default function AboutPreview() {
           {/* Content */}
           <div>
             <p className="text-[#C9A96E] text-sm font-sans uppercase tracking-widest mb-3">
-              About Dr. Girish N. Mirajkar
+              About Dr. Girish
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FAFAFA] leading-tight mb-5 sm:mb-6">
               Precision, Art &<br />
@@ -68,14 +55,14 @@ export default function AboutPreview() {
             </h2>
             <div className="section-divider" />
             <p className="text-[#94a3b8] font-sans leading-relaxed mb-6">
-              Dr. Girish N. Mirajkar is a board-certified Consultant Plastic, Aesthetic & Reconstructive Surgeon
+              Dr. Girish is a board-certified Consultant Plastic, Aesthetic & Reconstructive Surgeon
               practising in Mumbai, with over a decade of expertise in
               reconstructive and aesthetic procedures. He combines surgical
               precision with an artistic eye to deliver results that are
               natural, refined, and long-lasting.
             </p>
             <p className="text-[#94a3b8] font-sans leading-relaxed mb-8">
-              Trained at leading institutions across India, Dr. Girish N. Mirajkar
+              Trained at leading institutions across India, Dr. Girish
               specializes in facial rejuvenation, body contouring, breast
               aesthetics, and hair restoration — providing a comprehensive,
               patient-centered approach to cosmetic care.

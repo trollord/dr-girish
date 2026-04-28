@@ -12,7 +12,7 @@ const procedures = [
     id: "augmentation",
     name: "Breast Augmentation",
     tagline: "Fuller contours, naturally balanced",
-    description: "Breast augmentation enhances breast size and shape using silicone or saline implants, or fat transfer. Dr. Girish N. Mirajkar tailors implant selection to your unique body frame, ensuring results that look proportionate and feel natural. A detailed 3D planning session is conducted during consultation.",
+    description: "Breast augmentation enhances breast size and shape using silicone or saline implants, or fat transfer. Dr. Girish tailors implant selection to your unique body frame, ensuring results that look proportionate and feel natural. A detailed 3D planning session is conducted during consultation.",
     benefits: ["Custom implant selection by body frame", "Natural and proportionate enhancement", "Submuscular or subglandular placement options", "Fat transfer option available", "Long-lasting results with quality implants"],
     recovery: "10-14 days",
     anaesthesia: "General",
@@ -38,11 +38,11 @@ const procedures = [
 ];
 
 const faqs = [
-  { q: "What type of breast implants does Dr. Girish N. Mirajkar use?", a: "Dr. Girish N. Mirajkar uses FDA-approved, CE-marked cohesive gel silicone implants from internationally recognised manufacturers. Round and anatomical profiles are available depending on your goals and anatomy." },
+  { q: "What type of breast implants does Dr. Girish N. Mirajkar use?", a: "Dr. Girish uses FDA-approved, CE-marked cohesive gel silicone implants from internationally recognised manufacturers. Round and anatomical profiles are available depending on your goals and anatomy." },
   { q: "Will breast implants affect breastfeeding?", a: "Most breast augmentation techniques preserve breastfeeding ability. Incision location and implant placement are planned to minimise interference with milk ducts and glands." },
   { q: "How long do breast implants last?", a: "Modern high-quality implants are designed to last 15-20+ years. They do not require routine replacement unless there is a complication. Regular check-ups are recommended." },
   { q: "Will there be visible scarring after breast surgery?", a: "Scars are placed in inconspicuous locations within the breast fold, around the areola, or in the armpit. They fade significantly over 12-18 months." },
-  { q: "Can I combine a breast lift with augmentation?", a: "Yes. A combined augmentation-mastopexy is a common and effective procedure. Dr. Girish N. Mirajkar will assess whether a combined or staged approach is safer for your case." },
+  { q: "Can I combine a breast lift with augmentation?", a: "Yes. A combined augmentation-mastopexy is a common and effective procedure. Dr. Girish will assess whether a combined or staged approach is safer for your case." },
   { q: "When can I return to exercise after breast surgery?", a: "Light walking resumes within days. Upper body exercise is restricted for 6 weeks. Full unrestricted exercise typically resumes at 8 weeks post-surgery." },
 ];
 
@@ -64,7 +64,7 @@ export default function BreastProceduresPage() {
             Breast <span className="text-[#C9A96E]">Procedures</span>
           </h1>
           <p className="text-[#94a3b8] font-sans text-lg max-w-3xl mx-auto leading-relaxed">
-            Whether seeking enhancement, relief from physical discomfort, or restoration — Dr. Girish N. Mirajkar delivers breast surgery tailored to your body, lifestyle, and goals.
+            Whether seeking enhancement, relief from physical discomfort, or restoration — Dr. Girish delivers breast surgery tailored to your body, lifestyle, and goals.
           </p>
         </div>
       </section>
@@ -135,7 +135,7 @@ export default function BreastProceduresPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl sm:text-4xl text-[#FAFAFA] mb-5">Begin Your Consultation</h2>
           <p className="text-[#94a3b8] font-sans mb-8 leading-relaxed">
-            Discuss your goals with Dr. Girish N. Mirajkar in a private, comfortable setting and receive a personalised recommendation.
+            Discuss your goals with Dr. Girish in a private, comfortable setting and receive a personalised recommendation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-block bg-[#C9A96E] hover:bg-[#D4B483] text-[#0f1a2e] font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">

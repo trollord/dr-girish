@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Star, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Patient Testimonials | Dr. Girish N. Mirajkar Plastic Surgeon Mumbai",
-  description: "Read what patients say about their experience with Dr. Girish N. Mirajkar — real stories from rhinoplasty, facelift, breast surgery, and hair restoration patients in Mumbai.",
+  title: "Patient Testimonials | Dr. Girish Plastic Surgeon Mumbai",
+  description: "Read what patients say about their experience with Dr. Girish — real stories from rhinoplasty, facelift, breast surgery, and hair restoration patients in Mumbai.",
 };
 
 const testimonials = [
@@ -14,7 +14,7 @@ const testimonials = [
     location: "Mumbai",
     rating: 5,
     date: "February 2026",
-    quote: "I had been insecure about my nose for over a decade. After consulting three surgeons, Dr. Girish N. Mirajkar was the only one who truly understood what I wanted — a subtle refinement, not a dramatic change. Six months on, I have the nose I always pictured. The scar from the open approach is completely invisible. I am so grateful.",
+    quote: "I had been insecure about my nose for over a decade. After consulting three surgeons, Dr. Girish was the only one who truly understood what I wanted — a subtle refinement, not a dramatic change. Six months on, I have the nose I always pictured. The scar from the open approach is completely invisible. I am so grateful.",
   },
   {
     name: "Sneha R.",
@@ -22,7 +22,7 @@ const testimonials = [
     location: "Pune",
     rating: 5,
     date: "January 2026",
-    quote: "Dr. Girish N. Mirajkar spent an hour with me during consultation going through every concern I had. The 3D planning really helped me visualise the outcome. The surgery itself was smooth, recovery was easier than I expected, and the results look completely natural. I could not be happier.",
+    quote: "Dr. Girish spent an hour with me during consultation going through every concern I had. The 3D planning really helped me visualise the outcome. The surgery itself was smooth, recovery was easier than I expected, and the results look completely natural. I could not be happier.",
   },
   {
     name: "Rohan M.",
@@ -30,7 +30,7 @@ const testimonials = [
     location: "Mumbai",
     rating: 5,
     date: "November 2025",
-    quote: "I had my FUE transplant done nine months ago — 2,400 grafts. The hairline design is exactly what I asked for and the density is incredible. Friends who do not know I had the procedure genuinely cannot tell. Dr. Girish N. Mirajkar and his team made the entire experience comfortable from start to finish.",
+    quote: "I had my FUE transplant done nine months ago — 2,400 grafts. The hairline design is exactly what I asked for and the density is incredible. Friends who do not know I had the procedure genuinely cannot tell. Dr. Girish and his team made the entire experience comfortable from start to finish.",
   },
   {
     name: "Kavitha T.",
@@ -38,7 +38,7 @@ const testimonials = [
     location: "Bangalore",
     rating: 5,
     date: "October 2025",
-    quote: "After two pregnancies my abdomen was something I could not fix no matter how much I exercised. The tummy tuck gave me back a flat stomach I had not had in years. Dr. Girish N. Mirajkar was honest about what the surgery could and could not achieve, which made me trust him completely. Results exceeded my expectations.",
+    quote: "After two pregnancies my abdomen was something I could not fix no matter how much I exercised. The tummy tuck gave me back a flat stomach I had not had in years. Dr. Girish was honest about what the surgery could and could not achieve, which made me trust him completely. Results exceeded my expectations.",
   },
   {
     name: "Aarti K.",
@@ -46,7 +46,7 @@ const testimonials = [
     location: "Mumbai",
     rating: 5,
     date: "September 2025",
-    quote: "I was very nervous about looking overdone — I had seen facelifts that looked pulled and unnatural. Dr. Girish N. Mirajkar reassured me from the first consultation and the result speaks for itself. I look like a rested, younger version of myself. My family said I look refreshed but could not put a finger on why. That is exactly what I wanted.",
+    quote: "I was very nervous about looking overdone — I had seen facelifts that looked pulled and unnatural. Dr. Girish reassured me from the first consultation and the result speaks for itself. I look like a rested, younger version of myself. My family said I look refreshed but could not put a finger on why. That is exactly what I wanted.",
   },
   {
     name: "Amit D.",
@@ -54,7 +54,7 @@ const testimonials = [
     location: "Delhi",
     rating: 5,
     date: "August 2025",
-    quote: "I had patchy beard growth that bothered me for years. Dr. Girish N. Mirajkar designed a beard shape that suits my face perfectly. The transplanted hair grew fully and blends seamlessly with my natural beard. The procedure was painless under local anaesthesia and I was back to work in a week. Absolutely worth it.",
+    quote: "I had patchy beard growth that bothered me for years. Dr. Girish designed a beard shape that suits my face perfectly. The transplanted hair grew fully and blends seamlessly with my natural beard. The procedure was painless under local anaesthesia and I was back to work in a week. Absolutely worth it.",
   },
   {
     name: "Meera V.",
@@ -62,7 +62,7 @@ const testimonials = [
     location: "Mumbai",
     rating: 5,
     date: "July 2025",
-    quote: "Years of back pain and difficulty finding clothes that fit. The breast reduction changed my life. I no longer have constant discomfort and I feel proportionate for the first time. Dr. Girish N. Mirajkar was compassionate, explained the entire process clearly, and the scars have faded beautifully. I only wish I had done it sooner.",
+    quote: "Years of back pain and difficulty finding clothes that fit. The breast reduction changed my life. I no longer have constant discomfort and I feel proportionate for the first time. Dr. Girish was compassionate, explained the entire process clearly, and the scars have faded beautifully. I only wish I had done it sooner.",
   },
   {
     name: "Nidhi P.",
@@ -70,7 +70,7 @@ const testimonials = [
     location: "Mumbai",
     rating: 5,
     date: "June 2025",
-    quote: "The hooded eyelids were ageing me significantly and I was always told I looked tired. After the eyelid surgery my eyes are open and bright — it has made an enormous difference to my appearance and confidence. The procedure was quick and recovery was surprisingly easy. Dr. Girish N. Mirajkar is genuinely skilled and attentive.",
+    quote: "The hooded eyelids were ageing me significantly and I was always told I looked tired. After the eyelid surgery my eyes are open and bright — it has made an enormous difference to my appearance and confidence. The procedure was quick and recovery was surprisingly easy. Dr. Girish is genuinely skilled and attentive.",
   },
   {
     name: "Suresh L.",
@@ -78,7 +78,7 @@ const testimonials = [
     location: "Hyderabad",
     rating: 5,
     date: "May 2025",
-    quote: "I had stubborn fat around my abdomen and flanks that refused to go despite a healthy lifestyle. Dr. Girish N. Mirajkar used VASER liposuction and the result is a much more defined contour. The recovery was manageable and the team was available whenever I had questions. Professional practice from start to finish.",
+    quote: "I had stubborn fat around my abdomen and flanks that refused to go despite a healthy lifestyle. Dr. Girish used VASER liposuction and the result is a much more defined contour. The recovery was manageable and the team was available whenever I had questions. Professional practice from start to finish.",
   },
 ];
 
@@ -166,7 +166,7 @@ export default function TestimonialsPage() {
               Ready to Write Your Own Story?
             </h2>
             <p className="text-[#94a3b8] font-sans mb-8 leading-relaxed max-w-2xl mx-auto">
-              Schedule a consultation with Dr. Girish N. Mirajkar and take the first step toward the transformation you have been considering.
+              Schedule a consultation with Dr. Girish and take the first step toward the transformation you have been considering.
             </p>
             <Link href="/contact" className="inline-block bg-[#C9A96E] hover:bg-[#D4B483] text-[#0f1a2e] font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">
               Book a Consultation

@@ -8,20 +8,54 @@ export const metadata: Metadata = {
 
 const procedures = [
   "Select a Procedure",
-  "Rhinoplasty (Nose Surgery)",
+  // Facial — Surgical
+  "Rhinoplasty (Nose Job)",
   "Facelift",
+  "Brow-Lift",
   "Blepharoplasty (Eyelid Surgery)",
-  "Lip Augmentation",
+  "Dimple Creation",
+  "Lip Height Reduction",
+  "Buccal Fat Removal",
+  "Fat Transfer for Scars",
+  "Scar Revision (Face)",
+  // Ear
+  "Prominent Ears Correction",
+  "Stahl's Ear Correction",
+  "Lobuloplasty (Ear Piercings)",
+  "Keloid Treatment After Piercings",
+  // Facial — Non-Surgical
+  "Botox",
+  "Fillers",
+  "Thread-Lift",
+  // Hair
+  "Hair Transplant",
+  "FUE Hair Transplant",
+  "Beard Transplant",
+  // Breast
   "Breast Augmentation",
   "Breast Reduction",
-  "Breast Lift (Mastopexy)",
-  "Liposuction",
+  "Mastopexy (Breast-Lift)",
+  "Augmentation Mastopexy",
+  "Nipple Inversion Correction",
+  // Body
+  "Double Chin Reduction",
+  "Arm Fat Reduction",
+  "Gynaecomastia",
+  "Tummy Fat Removal",
+  "360° Liposuction",
   "Tummy Tuck (Abdominoplasty)",
-  "Mommy Makeover",
-  "Arm Lift (Brachioplasty)",
-  "FUE Hair Transplant",
-  "PRP Therapy",
-  "Beard Transplant",
+  "Total Mommy-Makeover",
+  "Thigh Lift",
+  "Post Massive Weight Loss Surgery",
+  // Scar
+  "Cesarian Section Scar Revision",
+  "Body Scar Revision",
+  "Acne Scar Treatment",
+  "Previous Surgical Scar Revision",
+  // Aesthetic Gynaecology
+  "Labia Reduction",
+  "Vaginal Rejuvenation",
+  // Other
   "Other / Multiple Procedures",
 ];
 
@@ -29,17 +63,17 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Clinic Address",
-    lines: ["Dr. Girish N. Mirajkar", "Aesthetic Surgery Centre", "Bandra West, Mumbai — 400050", "Maharashtra, India"],
+    lines: ["Dr. Girish N. Mirajkar", "Aesthetic Surgery Centre", "[Address to be updated]", "Mumbai, Maharashtra, India"],
   },
   {
     icon: Phone,
     label: "Phone",
-    lines: ["+91 98765 43210", "+91 22 4567 8901"],
+    lines: ["[Phone number to be updated]"],
   },
   {
     icon: Mail,
     label: "Email",
-    lines: ["info@drgirish.com", "appointments@drgirish.com"],
+    lines: ["[Email to be updated]"],
   },
   {
     icon: Clock,
@@ -190,7 +224,7 @@ export default function ContactPage() {
                       id="message"
                       name="message"
                       rows={5}
-                      placeholder="Describe your concerns, goals, or any questions you have for Dr. Girish N. Mirajkar..."
+                      placeholder="Describe your concerns, goals, or any questions you have for Dr. Girish..."
                       className="w-full bg-[#0f1a2e] border border-[#243355] rounded-xl px-4 py-3 font-sans text-[#FAFAFA] placeholder-[#94a3b8]/50 focus:outline-none focus:border-[#C9A96E] transition-colors text-sm resize-none"
                     />
                   </div>
@@ -205,7 +239,7 @@ export default function ContactPage() {
                       className="w-4 h-4 mt-0.5 accent-[#C9A96E] flex-shrink-0"
                     />
                     <label htmlFor="consent" className="font-sans text-xs text-[#94a3b8] leading-relaxed cursor-pointer">
-                      I consent to Dr. Girish N. Mirajkar's team contacting me regarding my enquiry. I understand that my personal information will be handled in accordance with applicable privacy laws and will not be shared with third parties. <span className="text-[#C9A96E]">*</span>
+                      I consent to Dr. Girish's team contacting me regarding my enquiry. I understand that my personal information will be handled in accordance with applicable privacy laws and will not be shared with third parties. <span className="text-[#C9A96E]">*</span>
                     </label>
                   </div>
 

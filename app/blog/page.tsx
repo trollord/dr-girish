@@ -32,7 +32,7 @@ const posts = [
     slug: "breast-augmentation-implant-guide",
     category: "Breast",
     title: "Choosing the Right Breast Implant: Size, Profile, and Material",
-    excerpt: "Round vs anatomical, silicone vs saline, over vs under the muscle — the number of choices can be overwhelming. Dr. Girish N. Mirajkar breaks down every decision factor in simple, practical terms.",
+    excerpt: "Round vs anatomical, silicone vs saline, over vs under the muscle — the number of choices can be overwhelming. Dr. Girish breaks down every decision factor in simple, practical terms.",
     date: "February 8, 2026",
     readTime: "7 min read",
     featured: false,
@@ -62,7 +62,7 @@ const posts = [
     slug: "mommy-makeover-right-time",
     category: "Body",
     title: "The Mommy Makeover: Is the Timing Right for You?",
-    excerpt: "A mommy makeover can restore body confidence after pregnancy, but timing matters. Dr. Girish N. Mirajkar discusses when to proceed, what to realistically expect, and how to prepare for the best possible outcome.",
+    excerpt: "A mommy makeover can restore body confidence after pregnancy, but timing matters. Dr. Girish discusses when to proceed, what to realistically expect, and how to prepare for the best possible outcome.",
     date: "December 30, 2025",
     readTime: "9 min read",
     featured: false,
@@ -89,7 +89,7 @@ export default function BlogPage() {
             Blog &amp; <span className="text-[#C9A96E]">Articles</span>
           </h1>
           <p className="text-[#94a3b8] font-sans text-lg max-w-3xl mx-auto leading-relaxed">
-            In-depth guides, procedure overviews, and honest insights from Dr. Girish N. Mirajkar — designed to help you make confident, well-informed decisions about aesthetic surgery.
+            In-depth guides, procedure overviews, and honest insights from Dr. Girish — designed to help you make confident, well-informed decisions about aesthetic surgery.
           </p>
         </div>
       </section>

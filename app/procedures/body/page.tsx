@@ -12,7 +12,7 @@ const procedures = [
     id: "liposuction",
     name: "Liposuction",
     tagline: "Sculpt stubborn fat with precision",
-    description: "Liposuction removes localised fat deposits that are resistant to diet and exercise. Dr. Girish N. Mirajkar uses advanced VASER ultrasound-assisted and tumescent liposuction techniques for smooth, precise fat removal from the abdomen, flanks, thighs, arms, back, and chin. The result is improved contour and definition, not weight loss.",
+    description: "Liposuction removes localised fat deposits that are resistant to diet and exercise. Dr. Girish uses advanced VASER ultrasound-assisted and tumescent liposuction techniques for smooth, precise fat removal from the abdomen, flanks, thighs, arms, back, and chin. The result is improved contour and definition, not weight loss.",
     benefits: ["Targets diet-resistant fat deposits", "VASER and tumescent techniques available", "Treats multiple areas in one session", "Minimal scarring via small access ports", "Improved body contour and proportion"],
     recovery: "7-14 days",
     anaesthesia: "General / IV Sedation",
@@ -21,7 +21,7 @@ const procedures = [
     id: "tummy-tuck",
     name: "Tummy Tuck (Abdominoplasty)",
     tagline: "A flatter, firmer abdomen",
-    description: "A tummy tuck removes excess abdominal skin and fat while tightening separated or weakened abdominal muscles (rectus diastasis). It is ideal for patients after significant weight loss or pregnancy who cannot achieve a flat abdomen through exercise alone. Dr. Girish N. Mirajkar performs full, mini, and extended abdominoplasty depending on the degree of correction needed.",
+    description: "A tummy tuck removes excess abdominal skin and fat while tightening separated or weakened abdominal muscles (rectus diastasis). It is ideal for patients after significant weight loss or pregnancy who cannot achieve a flat abdomen through exercise alone. Dr. Girish performs full, mini, and extended abdominoplasty depending on the degree of correction needed.",
     benefits: ["Removes excess skin and fat", "Repairs separated abdominal muscles", "Improves abdominal wall strength", "Long-lasting results with stable weight", "Can be combined with liposuction"],
     recovery: "14-21 days",
     anaesthesia: "General",
@@ -30,7 +30,7 @@ const procedures = [
     id: "mommy-makeover",
     name: "Mommy Makeover",
     tagline: "Restore your pre-pregnancy confidence",
-    description: "A mommy makeover is a customised combination of procedures to address the physical changes of pregnancy and breastfeeding. Typically including breast augmentation or lift, tummy tuck, and liposuction, it restores both breast and abdominal contour in a single surgical session. Dr. Girish N. Mirajkar personalises each plan to the patient's anatomy and goals.",
+    description: "A mommy makeover is a customised combination of procedures to address the physical changes of pregnancy and breastfeeding. Typically including breast augmentation or lift, tummy tuck, and liposuction, it restores both breast and abdominal contour in a single surgical session. Dr. Girish personalises each plan to the patient's anatomy and goals.",
     benefits: ["Comprehensive body restoration in one surgery", "Customised combination of procedures", "Addresses breasts, abdomen, and flanks", "One anaesthetic, one recovery", "Significant confidence restoration"],
     recovery: "21-28 days",
     anaesthesia: "General",
@@ -39,7 +39,7 @@ const procedures = [
     id: "arm-lift",
     name: "Arm Lift (Brachioplasty)",
     tagline: "Defined, toned upper arms",
-    description: "An arm lift removes excess skin and fat from the upper arms — the classic bat-wing appearance that develops with age or after significant weight loss. Dr. Girish N. Mirajkar places the incision along the inner arm where it is naturally concealed, removing redundant tissue and firming the skin for toned, proportionate arms.",
+    description: "An arm lift removes excess skin and fat from the upper arms — the classic bat-wing appearance that develops with age or after significant weight loss. Dr. Girish places the incision along the inner arm where it is naturally concealed, removing redundant tissue and firming the skin for toned, proportionate arms.",
     benefits: ["Removes sagging upper arm skin", "Improves arm contour and definition", "Scar positioned along inner arm", "Can be combined with liposuction", "Long-lasting with weight maintenance"],
     recovery: "10-14 days",
     anaesthesia: "General / IV Sedation",
@@ -48,9 +48,9 @@ const procedures = [
 
 const faqs = [
   { q: "Is liposuction a weight-loss procedure?", a: "No. Liposuction is a body contouring tool, not a weight-loss treatment. It is best suited for patients near their ideal weight with localised fat deposits that do not respond to diet and exercise." },
-  { q: "How much skin is removed in a tummy tuck?", a: "This varies greatly by patient. Dr. Girish N. Mirajkar assesses the degree of skin laxity, muscle separation, and fat distribution during consultation to plan how much tissue needs to be removed for optimal results." },
+  { q: "How much skin is removed in a tummy tuck?", a: "This varies greatly by patient. Dr. Girish assesses the degree of skin laxity, muscle separation, and fat distribution during consultation to plan how much tissue needs to be removed for optimal results." },
   { q: "When is the best time to have a mommy makeover?", a: "We recommend waiting until you have completed your family, as future pregnancies can reverse results. It is also best performed when your weight has been stable for at least 6 months and you have finished breastfeeding." },
-  { q: "Will I have drains after a tummy tuck?", a: "Surgical drains are typically placed for 5-7 days after abdominoplasty to prevent fluid accumulation. Dr. Girish N. Mirajkar will instruct you on drain care and schedule drain removal at your follow-up appointment." },
+  { q: "Will I have drains after a tummy tuck?", a: "Surgical drains are typically placed for 5-7 days after abdominoplasty to prevent fluid accumulation. Dr. Girish will instruct you on drain care and schedule drain removal at your follow-up appointment." },
   { q: "Can body contouring procedures be combined?", a: "Yes, and it is common. Combining liposuction with a tummy tuck or arm lift reduces overall recovery time and often achieves more harmonious results. Safety and operating time are always prioritised." },
   { q: "How long do body contouring results last?", a: "Results are long-lasting provided your weight remains stable. Liposuction permanently removes fat cells from treated areas. Tummy tuck results are maintained indefinitely without additional pregnancies or major weight fluctuations." },
 ];
@@ -144,7 +144,7 @@ export default function BodyProceduresPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl sm:text-4xl text-[#FAFAFA] mb-5">Ready to Transform?</h2>
           <p className="text-[#94a3b8] font-sans mb-8 leading-relaxed">
-            Consult with Dr. Girish N. Mirajkar to explore which body contouring procedures are right for your goals and anatomy.
+            Consult with Dr. Girish to explore which body contouring procedures are right for your goals and anatomy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-block bg-[#C9A96E] hover:bg-[#D4B483] text-[#0f1a2e] font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">

@@ -24,7 +24,7 @@ export default function ContactCTA() {
           Your Journey?
         </h2>
         <p className="text-[#94a3b8] font-sans text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-          Schedule a private, no-obligation consultation with Dr. Girish N. Mirajkar.
+          Schedule a private, no-obligation consultation with Dr. Girish.
           Discuss your goals and get a personalised treatment plan.
         </p>
 

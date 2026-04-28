@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-[#C9A96E] text-sm font-sans uppercase tracking-widest mb-3">
-            Why Dr. Girish N. Mirajkar
+            Why Dr. Girish
           </p>
           <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#FAFAFA] mb-4">
             The Right Choice for You

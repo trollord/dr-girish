@@ -47,7 +47,7 @@ export default function GalleryPage() {
             Before &amp; After <span className="text-[#C9A96E]">Gallery</span>
           </h1>
           <p className="text-[#94a3b8] font-sans text-lg max-w-3xl mx-auto leading-relaxed mb-4">
-            A curated selection of results from procedures performed by Dr. Girish N. Mirajkar. All photographs are shared with explicit patient consent.
+            A curated selection of results from procedures performed by Dr. Girish. All photographs are shared with explicit patient consent.
           </p>
           <div className="inline-flex items-center gap-2 bg-[#1a2a45] border border-[#243355] rounded-full px-5 py-2.5 text-[#94a3b8] font-sans text-sm">
             <span className="w-2 h-2 rounded-full bg-[#C9A96E] inline-block"></span>
@@ -132,7 +132,7 @@ export default function GalleryPage() {
             Envision Your Results
           </h2>
           <p className="text-[#94a3b8] font-sans mb-8 leading-relaxed">
-            Schedule a consultation to discuss your goals and see how Dr. Girish N. Mirajkar can help you achieve them.
+            Schedule a consultation to discuss your goals and see how Dr. Girish can help you achieve them.
           </p>
           <Link href="/contact" className="inline-block bg-[#C9A96E] hover:bg-[#D4B483] text-[#0f1a2e] font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">
             Book a Consultation

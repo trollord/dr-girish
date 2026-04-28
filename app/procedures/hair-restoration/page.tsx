@@ -12,7 +12,7 @@ const procedures = [
     id: "fue-transplant",
     name: "FUE Hair Transplant",
     tagline: "Permanent, natural-looking hair restoration",
-    description: "Follicular Unit Extraction (FUE) is the gold standard in hair transplantation. Individual hair follicles are harvested from the donor area (typically the back of the scalp) using a precision micro-punch and transplanted to thinning or bald areas. Dr. Girish N. Mirajkar meticulously designs the hairline to suit your facial structure, ensuring undetectable, natural results that grow permanently.",
+    description: "Follicular Unit Extraction (FUE) is the gold standard in hair transplantation. Individual hair follicles are harvested from the donor area (typically the back of the scalp) using a precision micro-punch and transplanted to thinning or bald areas. Dr. Girish meticulously designs the hairline to suit your facial structure, ensuring undetectable, natural results that grow permanently.",
     benefits: ["Permanent hair restoration", "No linear scar — tiny dot scars only", "Natural hairline design customised to face", "Grafts survive and grow for lifetime", "Local anaesthesia, walk-in walk-out procedure"],
     recovery: "5-7 days (social), 2-3 weeks (full)",
     anaesthesia: "Local",
@@ -30,7 +30,7 @@ const procedures = [
     id: "beard-transplant",
     name: "Beard Transplant",
     tagline: "Full, defined beard — exactly where you want it",
-    description: "A beard transplant fills patchy, thin, or absent beard areas using FUE-harvested follicles from the scalp. Dr. Girish N. Mirajkar carefully designs the beard shape, density, and direction to match your facial features and desired style. Whether you want a full beard, a shaped goatee, or coverage for scarring, the results are permanent and indistinguishable from natural beard growth.",
+    description: "A beard transplant fills patchy, thin, or absent beard areas using FUE-harvested follicles from the scalp. Dr. Girish carefully designs the beard shape, density, and direction to match your facial features and desired style. Whether you want a full beard, a shaped goatee, or coverage for scarring, the results are permanent and indistinguishable from natural beard growth.",
     benefits: ["Fills patchy or absent beard areas", "Permanent and natural-looking results", "Customised beard shape and density", "Covers post-traumatic or surgical scars", "Grafts grow and can be shaved normally"],
     recovery: "5-7 days",
     anaesthesia: "Local",
@@ -38,11 +38,11 @@ const procedures = [
 ];
 
 const faqs = [
-  { q: "How many grafts do I need for an FUE transplant?", a: "The number of grafts depends on the extent of hair loss, donor availability, and your desired density. A typical FUE session ranges from 1,500 to 3,500 grafts. Dr. Girish N. Mirajkar provides an accurate graft estimate during your consultation with a detailed scalp assessment." },
+  { q: "How many grafts do I need for an FUE transplant?", a: "The number of grafts depends on the extent of hair loss, donor availability, and your desired density. A typical FUE session ranges from 1,500 to 3,500 grafts. Dr. Girish provides an accurate graft estimate during your consultation with a detailed scalp assessment." },
   { q: "When will I see results after an FUE transplant?", a: "Transplanted hairs shed within 2-4 weeks (normal and expected — the follicles remain). New growth begins at 3-4 months. Significant density is visible by 6-8 months, with final results at 12-18 months." },
   { q: "Is hair transplant surgery painful?", a: "The procedure is performed under local anaesthesia, making it comfortable throughout. Mild soreness is expected for 2-3 days post-procedure and is easily managed with prescribed pain relief." },
   { q: "How many PRP sessions are needed?", a: "A standard course is 3-4 sessions spaced 4-6 weeks apart, followed by maintenance sessions every 4-6 months. Results are cumulative and most patients notice reduced shedding after the first 2 sessions." },
-  { q: "Can women undergo FUE hair transplant?", a: "Yes. Female pattern hair loss can be effectively treated with FUE in suitable candidates. Dr. Girish N. Mirajkar assesses donor density, hair loss pattern, and underlying causes before recommending surgical or non-surgical options." },
+  { q: "Can women undergo FUE hair transplant?", a: "Yes. Female pattern hair loss can be effectively treated with FUE in suitable candidates. Dr. Girish assesses donor density, hair loss pattern, and underlying causes before recommending surgical or non-surgical options." },
   { q: "Is there an age restriction for hair transplant?", a: "It is generally recommended after age 25-28 when hair loss patterns have stabilised. Transplanting too early risks needing repeat procedures as natural hair loss continues. Each case is assessed individually." },
 ];
 
