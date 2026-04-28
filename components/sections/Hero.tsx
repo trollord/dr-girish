@@ -85,9 +85,9 @@ export default function Hero() {
             {/* Stats row */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-8 sm:gap-10 mt-14">
               {[
-                { value: "10+", label: "Years Experience" },
-                { value: "2000+", label: "Procedures" },
-                { value: "1500+", label: "Happy Patients" },
+                { value: "9+", label: "Years Experience" },
+                { value: "1000+", label: "Procedures" },
+                { value: "700+", label: "Happy Patients" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
                   <div className="font-serif text-3xl font-bold text-[#C9A96E]">
