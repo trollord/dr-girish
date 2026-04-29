@@ -63,24 +63,24 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Clinic Address",
-    lines: ["Dr. Girish N. Mirajkar", "Aesthetic Surgery Centre", "[Address to be updated]", "Mumbai, Maharashtra, India"],
+    lines: [{ text: "Dr. Girish N. Mirajkar" }, { text: "Aesthetic Surgery Centre" }, { text: "[Address to be updated]" }, { text: "Mumbai, Maharashtra, India" }],
   },
   {
     icon: Phone,
     label: "Phone",
-    lines: ["+91 76202 46448"],
+    lines: [{ text: "+91 76202 46448", href: "tel:+917620246448" }],
   },
   {
     icon: Mail,
     label: "Email",
-    lines: ["drgirishmirajkar@gmail.com"],
+    lines: [{ text: "drgirishmirajkar@gmail.com", href: "mailto:drgirishmirajkar@gmail.com" }],
   },
   {
     icon: Clock,
     label: "Clinic Hours",
     lines: [
-      "Monday – Saturday: 5:00 PM – 8:00 PM",
-      "Sunday: By Appointment",
+      { text: "Monday – Saturday: 5:00 PM – 8:00 PM" },
+      { text: "Sunday: By Appointment" },
     ],
   },
 ];
@@ -269,11 +269,17 @@ export default function ContactPage() {
                       <h3 className="font-sans font-semibold text-[#FAFAFA] text-sm">{item.label}</h3>
                     </div>
                     <div className="space-y-1">
-                      {item.lines.map((line, i) => (
-                        <p key={i} className="font-sans text-sm text-[#94a3b8] leading-relaxed">
-                          {line}
-                        </p>
-                      ))}
+                      {item.lines.map((line, i) =>
+                        "href" in line ? (
+                          <a key={i} href={line.href} className="block font-sans text-sm text-[#94a3b8] hover:text-[#C9A96E] transition-colors leading-relaxed">
+                            {line.text}
+                          </a>
+                        ) : (
+                          <p key={i} className="font-sans text-sm text-[#94a3b8] leading-relaxed">
+                            {line.text}
+                          </p>
+                        )
+                      )}
                     </div>
                   </div>
                 );
