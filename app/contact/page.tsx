@@ -68,21 +68,19 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone",
-    lines: ["[Phone number to be updated]"],
+    lines: ["+91 76202 46448"],
   },
   {
     icon: Mail,
     label: "Email",
-    lines: ["[Email to be updated]"],
+    lines: ["drgirishmirajkar@gmail.com"],
   },
   {
     icon: Clock,
     label: "Clinic Hours",
     lines: [
-      "Monday – Friday: 10:00 AM – 7:00 PM",
-      "Saturday: 10:00 AM – 4:00 PM",
-      "Sunday: Closed",
-      "Emergency: Available by call",
+      "Monday – Saturday: 5:00 PM – 8:00 PM",
+      "Sunday: By Appointment",
     ],
   },
 ];
@@ -169,7 +167,7 @@ export default function ContactPage() {
                         id="phone"
                         name="phone"
                         required
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 76202 46448"
                         className="w-full bg-[#0f1a2e] border border-[#243355] rounded-xl px-4 py-3 font-sans text-[#FAFAFA] placeholder-[#94a3b8]/50 focus:outline-none focus:border-[#C9A96E] transition-colors text-sm"
                       />
                     </div>

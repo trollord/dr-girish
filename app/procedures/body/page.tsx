@@ -150,7 +150,7 @@ export default function BodyProceduresPage() {
             <Link href="/contact" className="inline-block bg-[#C9A96E] hover:bg-[#D4B483] text-[#0f1a2e] font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">
               Book a Consultation
             </Link>
-            <a href="tel:+919876543210" className="inline-flex items-center justify-center gap-2 border border-[#C9A96E] text-[#C9A96E] hover:bg-[#C9A96E]/10 font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">
+            <a href="tel:+917620246448" className="inline-flex items-center justify-center gap-2 border border-[#C9A96E] text-[#C9A96E] hover:bg-[#C9A96E]/10 font-sans font-semibold px-10 py-4 rounded-full transition-colors duration-200">
               <Phone className="w-4 h-4" />
               Call Us
             </a>

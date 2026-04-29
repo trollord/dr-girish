@@ -36,7 +36,7 @@ export default function ContactCTA() {
             Book a Consultation
           </Link>
           <a
-            href="https://wa.me/919876543210?text=Hi%20Dr.%20Mandar%2C%20I%27d%20like%20to%20book%20a%20consultation."
+            href="https://wa.me/917620246448?text=Hi%20Dr.%20Girish%2C%20I%27d%20like%20to%20book%20a%20consultation."
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 text-[#FAFAFA] font-sans font-medium text-sm rounded-full border border-[#243355] hover:border-[#C9A96E]/40 hover:bg-[#1a2a45] transition-all duration-200 min-w-[220px] text-center flex items-center justify-center gap-2"
@@ -49,15 +49,15 @@ export default function ContactCTA() {
         {/* Contact info bar */}
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 justify-center items-center">
           <a
-            href="tel:+919876543210"
+            href="tel:+917620246448"
             className="flex items-center gap-2 text-[#94a3b8] hover:text-[#C9A96E] transition-colors font-sans text-sm"
           >
             <Phone size={14} className="text-[#C9A96E]" />
-            +91 98765 43210
+            +91 76202 46448
           </a>
           <div className="w-px h-4 bg-[#243355] hidden sm:block" />
           <span className="text-[#94a3b8] font-sans text-sm">
-            Mon – Sat: 9 AM – 7 PM
+            Mon – Sat: 5 PM – 8 PM
           </span>
           <div className="w-px h-4 bg-[#243355] hidden sm:block" />
           <span className="text-[#94a3b8] font-sans text-sm">
