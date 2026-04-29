@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Calendar, Clock, ArrowLeft, ArrowRight } from "lucide-react";
 
@@ -10,6 +11,8 @@ const posts: Record<string, {
   date: string;
   readTime: string;
   excerpt: string;
+  coverImage: string;
+  coverAlt: string;
   content: string;
 }> = {
   "rhinoplasty-what-to-expect": {
@@ -18,6 +21,8 @@ const posts: Record<string, {
     date: "March 5, 2026",
     readTime: "8 min read",
     excerpt: "A comprehensive guide to the nose reshaping procedure — from your initial consultation and surgical planning to the recovery timeline and final results.",
+    coverImage: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1200&q=80",
+    coverAlt: "Close-up portrait illustrating facial profile and features relevant to rhinoplasty",
     content: `
 ## What Is Rhinoplasty?
 
@@ -109,6 +114,8 @@ Rhinoplasty, when done well, is life-changing. The decision to proceed should be
     date: "February 20, 2026",
     readTime: "10 min read",
     excerpt: "How does FUE work, who is the ideal candidate, how many grafts will you need, and what does the growth timeline look like? Every question about modern hair transplantation answered.",
+    coverImage: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80",
+    coverAlt: "Hair and scalp close-up relevant to hair transplant procedures",
     content: `
 ## Understanding Hair Loss
 
@@ -202,6 +209,8 @@ The quality of a hair transplant is determined almost entirely by the skill and 
     date: "February 8, 2026",
     readTime: "7 min read",
     excerpt: "Round vs anatomical, silicone vs saline, over vs under the muscle — the number of choices can be overwhelming. Every decision factor explained in simple, practical terms.",
+    coverImage: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=1200&q=80",
+    coverAlt: "Medical consultation setting representing breast procedure planning",
     content: `
 ## Why Implant Selection Matters
 
@@ -274,6 +283,8 @@ Breast augmentation is a long-term commitment. Implants are not lifetime devices
     date: "January 25, 2026",
     readTime: "6 min read",
     excerpt: "These two procedures are often confused, but they address very different problems. Understanding the distinction could save you from choosing the wrong surgery.",
+    coverImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80",
+    coverAlt: "Fitness and body wellness concept illustrating body contouring goals",
     content: `
 ## The Most Common Confusion in Body Contouring
 
@@ -363,6 +374,8 @@ A careful in-person assessment is essential. Photographs and descriptions can gu
     date: "January 12, 2026",
     readTime: "5 min read",
     excerpt: "From the fear of looking windswept to worries about visible scars, many facelift misconceptions stop patients from exploring an option that could genuinely transform their confidence.",
+    coverImage: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80",
+    coverAlt: "Woman with clear skin representing facial rejuvenation and facelift results",
     content: `
 ## Why Facelift Misconceptions Persist
 
@@ -444,6 +457,8 @@ Today's facelift, in the hands of a trained plastic surgeon, is a nuanced, highl
     date: "December 30, 2025",
     readTime: "9 min read",
     excerpt: "A mommy makeover can restore body confidence after pregnancy, but timing matters. When to proceed, what to realistically expect, and how to prepare for the best possible outcome.",
+    coverImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80",
+    coverAlt: "Woman representing confidence and wellness after body restoration",
     content: `
 ## What Pregnancy Does to the Body
 
@@ -667,6 +682,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </div>
       </section>
+
+      {/* Cover image */}
+      <div className="w-full bg-[#0a1220]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-0">
+          <div className="relative w-full rounded-2xl overflow-hidden border border-[#243355]" style={{ aspectRatio: "16/7" }}>
+            <Image
+              src={post.coverImage}
+              alt={post.coverAlt}
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a2e]/40 to-transparent" />
+          </div>
+        </div>
+      </div>
 
       {/* Article body */}
       <section className="py-16 bg-[#0f1a2e]">
