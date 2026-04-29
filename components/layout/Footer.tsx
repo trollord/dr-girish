@@ -111,8 +111,8 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin size={16} className="text-[#C9A96E] mt-0.5 shrink-0" />
                 <span className="text-sm text-[#94a3b8] font-sans leading-relaxed">
-                  Aesthetic Surgery Centre,<br />
-                  Mumbai, Maharashtra
+                  5XQ8+HH,<br />
+                  Thane, Maharashtra
                 </span>
               </li>
               <li className="flex gap-3 items-center">

@@ -61,7 +61,7 @@ export default function ContactCTA() {
           </span>
           <div className="w-px h-4 bg-[#243355] hidden sm:block" />
           <span className="text-[#94a3b8] font-sans text-sm">
-            Bandra West, Mumbai
+            Thane, Maharashtra
           </span>
         </div>
       </div>

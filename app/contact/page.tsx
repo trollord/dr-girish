@@ -63,7 +63,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Clinic Address",
-    lines: [{ text: "Dr. Girish N. Mirajkar" }, { text: "Aesthetic Surgery Centre" }, { text: "[Address to be updated]" }, { text: "Mumbai, Maharashtra, India" }],
+    lines: [{ text: "Dr. Girish Mirajkar | Plastic Surgeon" }, { text: "5XQ8+HH, Thane, Maharashtra" }],
   },
   {
     icon: Phone,
@@ -285,22 +285,18 @@ export default function ContactPage() {
                 );
               })}
 
-              {/* Map placeholder */}
+              {/* Google Maps embed */}
               <div className="bg-[#1a2a45] border border-[#243355] rounded-2xl overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-[#243355] to-[#0a1220] flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-8 h-8 text-[#C9A96E] mx-auto mb-2" />
-                    <p className="font-sans text-sm text-[#94a3b8]">Bandra West, Mumbai</p>
-                    <a
-                      href="https://maps.google.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-sans text-xs text-[#C9A96E] hover:underline mt-1 block"
-                    >
-                      Open in Google Maps
-                    </a>
-                  </div>
-                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d771.4463985305916!2d72.9664114139195!3d19.188622098828635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b98aa0a7a18f%3A0x5bee53b763628b30!2sDr%20Girish%20Mirajkar%20%7C%20Plastic%20Surgeon%20%7C%20Thane!5e1!3m2!1sen!2sin!4v1777452007518!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Dr. Girish Mirajkar Clinic Location — Thane"
+                />
               </div>
             </div>
 
