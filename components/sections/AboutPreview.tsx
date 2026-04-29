@@ -36,7 +36,7 @@ export default function AboutPreview() {
             {/* Floating badge */}
             <div className="absolute -bottom-5 right-2 sm:-bottom-6 sm:-right-4 lg:right-0 bg-[#1a2a45] border border-[#243355] rounded-xl px-4 sm:px-5 py-3 sm:py-4 shadow-xl">
               <div className="font-serif text-3xl font-bold text-[#C9A96E]">
-                10+
+                9+
               </div>
               <div className="text-xs text-[#94a3b8] font-sans uppercase tracking-wide">
                 Years of Excellence
@@ -55,8 +55,8 @@ export default function AboutPreview() {
             </h2>
             <div className="section-divider" />
             <p className="text-[#94a3b8] font-sans leading-relaxed mb-6">
-              Dr. Girish is a board-certified Consultant Plastic, Aesthetic & Reconstructive Surgeon
-              practising in Mumbai, with over a decade of expertise in
+              Dr. Girish Mirajkar is a board-certified Consultant Plastic, Aesthetic & Reconstructive Surgeon
+              based in Thane, with a decade of surgical experience in
               reconstructive and aesthetic procedures. He combines surgical
               precision with an artistic eye to deliver results that are
               natural, refined, and long-lasting.

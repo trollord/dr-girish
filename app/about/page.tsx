@@ -145,8 +145,7 @@ export default function AboutPage() {
                 <p>
                   An active member of the Indian Association of Plastic Surgeons (IAPS), he
                   regularly participates in national and international conferences to stay at the
-                  forefront of evolving techniques, with specialised advanced training in rhinoplasty
-                  in South Korea.
+                  forefront of evolving techniques in plastic and aesthetic surgery.
                 </p>
                 <p>
                   Beyond the operating theatre, Dr. Girish is known for his calm, empathetic
