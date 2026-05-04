@@ -63,7 +63,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Clinic Address",
-    lines: [{ text: "Dr. Girish Mirajkar | Plastic Surgeon" }, { text: "5XQ8+HH, Thane, Maharashtra" }],
+    lines: [{ text: "Dr. Girish Mirajkar | Plastic Surgeon" }, { text: "G4 Akansha C.H.S, Navpada, Thane, Maharashtra" }],
   },
   {
     icon: Phone,

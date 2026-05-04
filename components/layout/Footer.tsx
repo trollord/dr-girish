@@ -111,7 +111,7 @@ export default function Footer() {
               <li className="flex gap-3">
                 <MapPin size={16} className="text-[#C9A96E] mt-0.5 shrink-0" />
                 <span className="text-sm text-[#94a3b8] font-sans leading-relaxed">
-                  5XQ8+HH,<br />
+                  G4 Akansha C.H.S, Navpada,<br />
                   Thane, Maharashtra
                 </span>
               </li>
