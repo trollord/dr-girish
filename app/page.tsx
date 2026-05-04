@@ -4,8 +4,8 @@ import AboutPreview from "@/components/sections/AboutPreview";
 import ProceduresGrid from "@/components/sections/ProceduresGrid";
 import Stats from "@/components/sections/Stats";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import GalleryPreview from "@/components/sections/GalleryPreview";
-import Testimonials from "@/components/sections/Testimonials";
+// import GalleryPreview from "@/components/sections/GalleryPreview";
+// import Testimonials from "@/components/sections/Testimonials";
 import BlogPreview from "@/components/sections/BlogPreview";
 import ContactCTA from "@/components/sections/ContactCTA";
 
@@ -26,8 +26,8 @@ export default function HomePage() {
       <ProceduresGrid />
       <Stats />
       <WhyChooseUs />
-      <GalleryPreview />
-      <Testimonials />
+      {/* <GalleryPreview /> */}
+      {/* <Testimonials /> */}
       <BlogPreview />
       <ContactCTA />
     </>

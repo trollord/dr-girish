@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Before & After Gallery | Plastic Surgery Results | Dr. Girish N. Mirajkar Mumbai",
@@ -7,27 +8,66 @@ export const metadata: Metadata = {
 };
 
 const galleryItems = [
-  { id: 1, category: "face", procedure: "Rhinoplasty", label: "Nose refinement, natural profile correction" },
-  { id: 2, category: "breast", procedure: "Breast Augmentation", label: "Cohesive gel implants, 320cc anatomical" },
-  { id: 3, category: "body", procedure: "Tummy Tuck", label: "Full abdominoplasty with liposuction" },
-  { id: 4, category: "hair", procedure: "FUE Hair Transplant", label: "2,800 grafts, hairline restoration" },
-  { id: 5, category: "face", procedure: "Facelift", label: "SMAS facelift with neck lift" },
-  { id: 6, category: "breast", procedure: "Breast Reduction", label: "Reduction and lift combined" },
-  { id: 7, category: "body", procedure: "Liposuction", label: "Abdomen, flanks and thigh sculpting" },
-  { id: 8, category: "hair", procedure: "Beard Transplant", label: "Full beard reconstruction, 1,400 grafts" },
-  { id: 9, category: "face", procedure: "Blepharoplasty", label: "Upper and lower eyelid surgery" },
-  { id: 10, category: "breast", procedure: "Breast Lift", label: "Mastopexy, periareolar technique" },
-  { id: 11, category: "body", procedure: "Mommy Makeover", label: "Tummy tuck, breast lift, liposuction" },
-  { id: 12, category: "face", procedure: "Lip Augmentation", label: "Hyaluronic acid filler, natural enhancement" },
-];
-
-const gradients = [
-  "from-rose-900/60 via-[#1a2a45] to-[#0a1220]",
-  "from-violet-900/60 via-[#1a2a45] to-[#0a1220]",
-  "from-sky-900/60 via-[#1a2a45] to-[#0a1220]",
-  "from-emerald-900/60 via-[#1a2a45] to-[#0a1220]",
-  "from-amber-900/60 via-[#1a2a45] to-[#0a1220]",
-  "from-pink-900/60 via-[#1a2a45] to-[#0a1220]",
+  {
+    id: 1, category: "face", procedure: "Rhinoplasty", label: "Nose refinement, natural profile correction",
+    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Woman profile illustrating rhinoplasty result",
+  },
+  {
+    id: 2, category: "breast", procedure: "Breast Augmentation", label: "Cohesive gel implants, 320cc anatomical",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Medical consultation illustrating breast augmentation procedure",
+  },
+  {
+    id: 3, category: "body", procedure: "Tummy Tuck", label: "Full abdominoplasty with liposuction",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Fit woman illustrating tummy tuck and body contouring result",
+  },
+  {
+    id: 4, category: "hair", procedure: "FUE Hair Transplant", label: "2,800 grafts, hairline restoration",
+    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Healthy hair illustrating FUE hair transplant result",
+  },
+  {
+    id: 5, category: "face", procedure: "Facelift", label: "SMAS facelift with neck lift",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Confident woman illustrating natural facelift result",
+  },
+  {
+    id: 6, category: "breast", procedure: "Breast Reduction", label: "Reduction and lift combined",
+    image: "https://images.unsplash.com/photo-1584516150909-c43483ee7932?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Doctor and patient consultation for breast reduction surgery",
+  },
+  {
+    id: 7, category: "body", procedure: "Liposuction", label: "Abdomen, flanks and thigh sculpting",
+    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Sculpted body illustrating liposuction contouring result",
+  },
+  {
+    id: 8, category: "hair", procedure: "Beard Transplant", label: "Full beard reconstruction, 1,400 grafts",
+    image: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Man with full beard illustrating beard transplant result",
+  },
+  {
+    id: 9, category: "face", procedure: "Blepharoplasty", label: "Upper and lower eyelid surgery",
+    image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Woman with bright expressive eyes illustrating blepharoplasty result",
+  },
+  {
+    id: 10, category: "breast", procedure: "Breast Lift", label: "Mastopexy, periareolar technique",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Confident woman illustrating breast lift result",
+  },
+  {
+    id: 11, category: "body", procedure: "Mommy Makeover", label: "Tummy tuck, breast lift, liposuction",
+    image: "https://images.unsplash.com/photo-1559757175-7cb057fba93b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Woman looking confident after mommy makeover procedure",
+  },
+  {
+    id: 12, category: "face", procedure: "Lip Augmentation", label: "Hyaluronic acid filler, natural enhancement",
+    image: "https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Close-up of lips illustrating natural lip augmentation result",
+  },
 ];
 
 const categoryLabels: Record<string, string> = {
@@ -76,38 +116,34 @@ export default function GalleryPage() {
 
           {/* Gallery grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryItems.map((item, index) => (
+            {galleryItems.map((item) => (
               <div
                 key={item.id}
                 className="group rounded-2xl border border-[#243355] overflow-hidden bg-[#1a2a45] hover:border-[#C9A96E]/40 transition-all duration-300"
               >
-                {/* Before / After placeholder visual */}
-                <div className="relative">
-                  <div className={
-                    "aspect-[4/3] bg-gradient-to-br " + gradients[index % gradients.length] +
-                    " flex"
-                  }>
-                    <div className="flex-1 flex items-center justify-center border-r border-white/10">
-                      <div className="text-center">
-                        <p className="font-sans text-xs text-[#94a3b8] uppercase tracking-widest mb-1">Before</p>
-                        <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mx-auto">
-                          <span className="font-serif text-[#94a3b8] text-lg">B</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex-1 flex items-center justify-center">
-                      <div className="text-center">
-                        <p className="font-sans text-xs text-[#C9A96E] uppercase tracking-widest mb-1">After</p>
-                        <div className="w-10 h-10 rounded-full bg-[#C9A96E]/20 border border-[#C9A96E]/40 flex items-center justify-center mx-auto">
-                          <span className="font-serif text-[#C9A96E] text-lg">A</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Image with overlay */}
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.imageAlt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/60 to-transparent pointer-events-none" />
                   {/* Category badge */}
                   <span className="absolute top-3 left-3 font-sans text-xs text-[#0f1a2e] bg-[#C9A96E] px-2.5 py-1 rounded-full font-semibold">
                     {categoryLabels[item.category]}
                   </span>
+                  {/* Before / After label strip */}
+                  <div className="absolute bottom-0 inset-x-0 flex">
+                    <div className="flex-1 flex items-center justify-center py-2 bg-black/40 border-r border-white/10">
+                      <p className="font-sans text-xs text-[#94a3b8] uppercase tracking-widest">Before</p>
+                    </div>
+                    <div className="flex-1 flex items-center justify-center py-2 bg-[#C9A96E]/20">
+                      <p className="font-sans text-xs text-[#C9A96E] uppercase tracking-widest font-semibold">After</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="p-5">
                   <h3 className="font-serif text-lg text-[#FAFAFA] mb-1">{item.procedure}</h3>

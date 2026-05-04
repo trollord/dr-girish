@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Clock } from "lucide-react";
 
 const posts = [
@@ -10,6 +11,8 @@ const posts = [
     category: "Recovery",
     readTime: "5 min read",
     date: "Feb 2026",
+    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Close-up of woman's facial profile illustrating rhinoplasty recovery",
   },
   {
     slug: "breast-augmentation-vs-lift-which-is-right",
@@ -19,6 +22,8 @@ const posts = [
     category: "Procedures",
     readTime: "4 min read",
     date: "Jan 2026",
+    image: "https://images.unsplash.com/photo-1584516150909-c43483ee7932?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Doctor consulting with a patient about surgical procedures",
   },
   {
     slug: "fue-hair-transplant-mumbai-guide",
@@ -28,6 +33,8 @@ const posts = [
     category: "Hair",
     readTime: "6 min read",
     date: "Dec 2025",
+    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Close-up of healthy hair illustrating FUE hair transplant results",
   },
 ];
 
@@ -66,15 +73,18 @@ export default function BlogPreview() {
               className="group block"
             >
               <article className="h-full bg-[#1a2a45] border border-[#243355] rounded-2xl overflow-hidden hover:border-[#C9A96E]/30 hover:shadow-lg hover:shadow-[#C9A96E]/5 transition-all duration-300">
-                {/* Placeholder image header */}
-                <div className="h-44 bg-gradient-to-br from-[#243355] to-[#1a2a45] relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-serif text-6xl font-bold text-[#C9A96E]/10 group-hover:text-[#C9A96E]/15 transition-colors">
-                      {post.category[0]}
-                    </span>
-                  </div>
+                {/* Image header */}
+                <div className="h-44 relative overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/60 to-transparent pointer-events-none" />
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 bg-[#C9A96E]/20 border border-[#C9A96E]/30 rounded-full text-xs text-[#C9A96E] font-sans uppercase tracking-wide">
+                    <span className="px-3 py-1 bg-[#C9A96E]/90 rounded-full text-xs text-[#0f1a2e] font-sans font-semibold uppercase tracking-wide">
                       {post.category}
                     </span>
                   </div>

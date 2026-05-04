@@ -55,6 +55,7 @@ const certifications = [
   "DrNB — Plastic & Reconstructive Surgery",
   "Member — Indian Association of Plastic Surgeons (IAPS)",
   "Member — Association of Plastic Surgeons of India (APSI)",
+  "Member — BRASA (Brazilian Society of Aesthetic Surgery)",
 ];
 
 const philosophyPoints = [

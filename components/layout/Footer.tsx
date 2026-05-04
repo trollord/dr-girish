@@ -10,8 +10,8 @@ const procedures = [
 
 const quickLinks = [
   { label: "About Dr. Girish", href: "/about" },
-  { label: "Before & After Gallery", href: "/gallery" },
-  { label: "Patient Testimonials", href: "/testimonials" },
+  // { label: "Before & After Gallery", href: "/gallery" },
+  // { label: "Patient Testimonials", href: "/testimonials" },
   { label: "Blog & Articles", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];

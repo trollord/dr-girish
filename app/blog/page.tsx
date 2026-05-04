@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, Calendar, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -16,7 +17,8 @@ const posts = [
     date: "March 5, 2026",
     readTime: "8 min read",
     featured: true,
-    gradient: "from-rose-900/50 to-[#1a2a45]",
+    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up portrait illustrating facial profile relevant to rhinoplasty",
   },
   {
     slug: "fue-hair-transplant-complete-guide",
@@ -26,7 +28,8 @@ const posts = [
     date: "February 20, 2026",
     readTime: "10 min read",
     featured: false,
-    gradient: "from-emerald-900/50 to-[#1a2a45]",
+    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Healthy hair illustrating FUE hair transplant results",
   },
   {
     slug: "breast-augmentation-implant-guide",
@@ -36,7 +39,8 @@ const posts = [
     date: "February 8, 2026",
     readTime: "7 min read",
     featured: false,
-    gradient: "from-violet-900/50 to-[#1a2a45]",
+    image: "https://images.unsplash.com/photo-1584516150909-c43483ee7932?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Doctor consulting with patient about surgical procedure options",
   },
   {
     slug: "tummy-tuck-vs-liposuction",
@@ -46,7 +50,8 @@ const posts = [
     date: "January 25, 2026",
     readTime: "6 min read",
     featured: false,
-    gradient: "from-sky-900/50 to-[#1a2a45]",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Fit woman illustrating body contouring results",
   },
   {
     slug: "facelift-myths-debunked",
@@ -56,7 +61,8 @@ const posts = [
     date: "January 12, 2026",
     readTime: "5 min read",
     featured: false,
-    gradient: "from-amber-900/50 to-[#1a2a45]",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Confident mature woman illustrating natural facelift results",
   },
   {
     slug: "mommy-makeover-right-time",
@@ -66,7 +72,8 @@ const posts = [
     date: "December 30, 2025",
     readTime: "9 min read",
     featured: false,
-    gradient: "from-pink-900/50 to-[#1a2a45]",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Woman looking confident illustrating mommy makeover transformation",
   },
 ];
 
@@ -100,13 +107,20 @@ export default function BlogPage() {
           {/* Featured post */}
           <div className="mb-12">
             <p className="text-[#C9A96E] font-sans text-sm tracking-widest uppercase mb-6">Featured Article</p>
-            <div className={"grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-2xl border border-[#243355] overflow-hidden bg-[#1a2a45] hover:border-[#C9A96E]/40 transition-colors duration-300"}>
-              <div className={"min-h-[260px] bg-gradient-to-br " + featured.gradient + " flex items-center justify-center p-8"}>
-                <div className="text-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-2xl border border-[#243355] overflow-hidden bg-[#1a2a45] hover:border-[#C9A96E]/40 transition-colors duration-300">
+              <div className="relative min-h-[260px]">
+                <Image
+                  src={featured.image}
+                  alt={featured.imageAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/70 via-[#0a1220]/30 to-transparent" />
+                <div className="absolute bottom-6 left-6">
                   <span className={"font-sans text-xs border rounded-full px-3 py-1 " + (categoryColors[featured.category] || "text-[#C9A96E] bg-[#C9A96E]/10 border-[#C9A96E]/20")}>
                     {featured.category}
                   </span>
-                  <p className="font-serif text-2xl text-[#FAFAFA] mt-4 leading-snug max-w-xs mx-auto">{featured.title}</p>
                 </div>
               </div>
               <div className="p-8 flex flex-col justify-center">
@@ -139,11 +153,21 @@ export default function BlogPage() {
                 key={post.slug}
                 className="group bg-[#1a2a45] border border-[#243355] hover:border-[#C9A96E]/40 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col"
               >
-                {/* Visual header */}
-                <div className={"aspect-video bg-gradient-to-br " + post.gradient + " flex items-center justify-center p-6"}>
-                  <span className={"font-sans text-xs border rounded-full px-3 py-1 " + (categoryColors[post.category] || "text-[#C9A96E] bg-[#C9A96E]/10 border-[#C9A96E]/20")}>
-                    {post.category}
-                  </span>
+                {/* Image header */}
+                <div className="aspect-video relative overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/60 to-transparent pointer-events-none" />
+                  <div className="absolute top-4 left-4">
+                    <span className={"font-sans text-xs border rounded-full px-3 py-1 " + (categoryColors[post.category] || "text-[#C9A96E] bg-[#C9A96E]/10 border-[#C9A96E]/20")}>
+                      {post.category}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Content */}
