@@ -1,19 +1,19 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.SENDER_EMAIL!,
-    pass: process.env.SENDER_PASSWORD!,
-  },
-});
-
 export async function POST(request: Request) {
   try {
     const data = await request.json();
+
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.SENDER_EMAIL,
+        pass: process.env.SENDER_PASSWORD,
+      },
+    });
 
     const firstName = (data.firstName || "").toString().trim();
     const lastName = (data.lastName || "").toString().trim();
