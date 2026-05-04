@@ -14,8 +14,8 @@ const procedures = [
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Procedures", href: "/procedures", dropdown: true },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Testimonials", href: "/testimonials" },
+  // { label: "Gallery", href: "/gallery" },
+  // { label: "Testimonials", href: "/testimonials" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
