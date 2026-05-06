@@ -30,7 +30,7 @@ export async function POST(request: Request) {
 
     const subject = `New Consultation Request — ${name} (${procedure})`;
     const textBody = [
-      "New consultation request from drgirishmirajkar.com:",
+      "New consultation request from girishmirajkar.com:",
       "",
       `Name:                ${name}`,
       `Phone:               ${phone}`,

@@ -127,10 +127,10 @@ export default function Footer() {
               <li className="flex gap-3 items-center">
                 <Mail size={16} className="text-[#C9A96E] shrink-0" />
                 <a
-                  href="mailto:drgirishmirajkar@gmail.com"
+                  href="mailto:girishmirajkar@gmail.com"
                   className="text-sm text-[#94a3b8] hover:text-[#C9A96E] transition-colors font-sans"
                 >
-                  drgirishmirajkar@gmail.com
+                  girishmirajkar@gmail.com
                 </a>
               </li>
             </ul>

@@ -21,7 +21,7 @@ const contactDetails = [
   {
     icon: Mail,
     label: "Email",
-    lines: [{ text: "drgirishmirajkar@gmail.com", href: "mailto:drgirishmirajkar@gmail.com" }],
+    lines: [{ text: "girishmirajkar@gmail.com", href: "mailto:girishmirajkar@gmail.com" }],
   },
   {
     icon: Clock,
