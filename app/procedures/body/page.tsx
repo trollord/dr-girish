@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, CheckCircle, ArrowLeft, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 const procedures = [
   {
     id: "liposuction",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Body contouring liposuction procedure consultation",
     name: "Liposuction",
     tagline: "Sculpt stubborn fat with precision",
     description: "Liposuction removes localised fat deposits that are resistant to diet and exercise. Dr. Girish uses advanced VASER ultrasound-assisted and tumescent liposuction techniques for smooth, precise fat removal from the abdomen, flanks, thighs, arms, back, and chin. The result is improved contour and definition, not weight loss.",
@@ -19,6 +22,8 @@ const procedures = [
   },
   {
     id: "tummy-tuck",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Abdominoplasty tummy tuck surgery consultation",
     name: "Tummy Tuck (Abdominoplasty)",
     tagline: "A flatter, firmer abdomen",
     description: "A tummy tuck removes excess abdominal skin and fat while tightening separated or weakened abdominal muscles (rectus diastasis). It is ideal for patients after significant weight loss or pregnancy who cannot achieve a flat abdomen through exercise alone. Dr. Girish performs full, mini, and extended abdominoplasty depending on the degree of correction needed.",
@@ -28,6 +33,8 @@ const procedures = [
   },
   {
     id: "mommy-makeover",
+    image: "https://images.unsplash.com/photo-1584516150909-c43483ee7932?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Mommy makeover plastic surgery consultation",
     name: "Mommy Makeover",
     tagline: "Restore your pre-pregnancy confidence",
     description: "A mommy makeover is a customised combination of procedures to address the physical changes of pregnancy and breastfeeding. Typically including breast augmentation or lift, tummy tuck, and liposuction, it restores both breast and abdominal contour in a single surgical session. Dr. Girish personalises each plan to the patient's anatomy and goals.",
@@ -37,6 +44,8 @@ const procedures = [
   },
   {
     id: "arm-lift",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Arm lift brachioplasty surgery result",
     name: "Arm Lift (Brachioplasty)",
     tagline: "Defined, toned upper arms",
     description: "An arm lift removes excess skin and fat from the upper arms — the classic bat-wing appearance that develops with age or after significant weight loss. Dr. Girish places the incision along the inner arm where it is naturally concealed, removing redundant tissue and firming the skin for toned, proportionate arms.",
@@ -82,13 +91,18 @@ export default function BodyProceduresPage() {
           <div className="space-y-10">
             {procedures.map((proc, index) => (
               <div key={proc.id} id={proc.id} className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-start rounded-2xl border border-[#243355] overflow-hidden bg-[#1a2a45]">
-                <div className="min-h-[160px] sm:min-h-[220px] bg-gradient-to-br from-[#243355] to-[#0a1220] flex items-center justify-center p-6 sm:p-8">
-                  <div className="text-center">
-                    <div className="w-16 h-16 rounded-full bg-[#C9A96E]/20 border-2 border-[#C9A96E]/40 flex items-center justify-center mx-auto mb-3">
-                      <span className="font-serif text-xl text-[#C9A96E]">{index + 1}</span>
-                    </div>
-                    <p className="font-serif text-xl text-[#C9A96E]">{proc.name}</p>
-                    <p className="font-sans text-sm text-[#94a3b8] mt-1 italic">{proc.tagline}</p>
+                <div className="relative min-h-[220px] sm:min-h-[280px] overflow-hidden">
+                  <Image
+                    src={proc.image}
+                    alt={proc.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/80 via-[#0a1220]/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <p className="font-serif text-lg text-[#C9A96E]">{proc.name}</p>
+                    <p className="font-sans text-sm text-[#94a3b8] italic">{proc.tagline}</p>
                   </div>
                 </div>
                 <div className="p-8">

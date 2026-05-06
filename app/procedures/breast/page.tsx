@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, CheckCircle, ArrowLeft, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 const procedures = [
   {
     id: "augmentation",
+    image: "https://images.unsplash.com/photo-1559757175-7cb057fba93b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Breast augmentation plastic surgery consultation",
     name: "Breast Augmentation",
     tagline: "Fuller contours, naturally balanced",
     description: "Breast augmentation enhances breast size and shape using silicone or saline implants, or fat transfer. Dr. Girish tailors implant selection to your unique body frame, ensuring results that look proportionate and feel natural. A detailed 3D planning session is conducted during consultation.",
@@ -19,6 +22,8 @@ const procedures = [
   },
   {
     id: "reduction",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Breast reduction surgery medical consultation",
     name: "Breast Reduction",
     tagline: "Relief, comfort, and renewed confidence",
     description: "Breast reduction removes excess breast tissue, fat, and skin to relieve physical symptoms such as neck and back pain, shoulder grooving, skin irritation, and difficulty with physical activity. The procedure also improves breast shape and symmetry, delivering both medical and aesthetic benefits simultaneously.",
@@ -28,6 +33,8 @@ const procedures = [
   },
   {
     id: "lift",
+    image: "https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Breast lift mastopexy surgery result",
     name: "Breast Lift (Mastopexy)",
     tagline: "Restore youth and firmness",
     description: "A breast lift raises and reshapes sagging breasts by removing excess skin and tightening surrounding tissue. It repositions the nipple-areola complex to a more youthful position. Often performed after weight loss, pregnancy, or breastfeeding, it can be combined with augmentation for added volume.",
@@ -71,15 +78,20 @@ export default function BreastProceduresPage() {
       <section className="py-20 bg-[#0f1a2e]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-10">
-            {procedures.map((proc, index) => (
+            {procedures.map((proc) => (
               <div key={proc.id} id={proc.id} className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-start rounded-2xl border border-[#243355] overflow-hidden bg-[#1a2a45]">
-                <div className="min-h-[160px] sm:min-h-[220px] bg-gradient-to-br from-[#243355] to-[#0a1220] flex items-center justify-center p-6 sm:p-8">
-                  <div className="text-center">
-                    <div className="w-16 h-16 rounded-full bg-[#C9A96E]/20 border-2 border-[#C9A96E]/40 flex items-center justify-center mx-auto mb-3">
-                      <span className="font-serif text-xl text-[#C9A96E]">{index + 1}</span>
-                    </div>
-                    <p className="font-serif text-xl text-[#C9A96E]">{proc.name}</p>
-                    <p className="font-sans text-sm text-[#94a3b8] mt-1 italic">{proc.tagline}</p>
+                <div className="relative min-h-[220px] sm:min-h-[280px] overflow-hidden">
+                  <Image
+                    src={proc.image}
+                    alt={proc.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/80 via-[#0a1220]/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <p className="font-serif text-lg text-[#C9A96E]">{proc.name}</p>
+                    <p className="font-sans text-sm text-[#94a3b8] italic">{proc.tagline}</p>
                   </div>
                 </div>
                 <div className="p-8">

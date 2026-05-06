@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, CheckCircle, ArrowLeft, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 const procedures = [
   {
     id: "fue-transplant",
+    image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "FUE hair transplant surgery procedure",
     name: "FUE Hair Transplant",
     tagline: "Permanent, natural-looking hair restoration",
     description: "Follicular Unit Extraction (FUE) is the gold standard in hair transplantation. Individual hair follicles are harvested from the donor area (typically the back of the scalp) using a precision micro-punch and transplanted to thinning or bald areas. Dr. Girish meticulously designs the hairline to suit your facial structure, ensuring undetectable, natural results that grow permanently.",
@@ -19,6 +22,8 @@ const procedures = [
   },
   {
     id: "prp-therapy",
+    image: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "PRP platelet rich plasma therapy scalp treatment",
     name: "PRP Therapy",
     tagline: "Regenerate, strengthen, and thicken",
     description: "Platelet-Rich Plasma (PRP) therapy uses your own blood, processed to concentrate growth factors, and injected into the scalp to stimulate hair follicle activity. It is highly effective for early-to-moderate hair thinning, as a standalone treatment or combined with FUE transplant to maximise graft survival and accelerate regrowth.",
@@ -28,6 +33,8 @@ const procedures = [
   },
   {
     id: "beard-transplant",
+    image: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Beard transplant facial hair restoration",
     name: "Beard Transplant",
     tagline: "Full, defined beard — exactly where you want it",
     description: "A beard transplant fills patchy, thin, or absent beard areas using FUE-harvested follicles from the scalp. Dr. Girish carefully designs the beard shape, density, and direction to match your facial features and desired style. Whether you want a full beard, a shaped goatee, or coverage for scarring, the results are permanent and indistinguishable from natural beard growth.",
@@ -71,15 +78,20 @@ export default function HairRestorationPage() {
       <section className="py-20 bg-[#0f1a2e]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-10">
-            {procedures.map((proc, index) => (
+            {procedures.map((proc) => (
               <div key={proc.id} id={proc.id} className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-start rounded-2xl border border-[#243355] overflow-hidden bg-[#1a2a45]">
-                <div className="min-h-[160px] sm:min-h-[220px] bg-gradient-to-br from-[#243355] to-[#0a1220] flex items-center justify-center p-6 sm:p-8">
-                  <div className="text-center">
-                    <div className="w-16 h-16 rounded-full bg-[#C9A96E]/20 border-2 border-[#C9A96E]/40 flex items-center justify-center mx-auto mb-3">
-                      <span className="font-serif text-xl text-[#C9A96E]">{index + 1}</span>
-                    </div>
-                    <p className="font-serif text-xl text-[#C9A96E]">{proc.name}</p>
-                    <p className="font-sans text-sm text-[#94a3b8] mt-1 italic">{proc.tagline}</p>
+                <div className="relative min-h-[220px] sm:min-h-[280px] overflow-hidden">
+                  <Image
+                    src={proc.image}
+                    alt={proc.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/80 via-[#0a1220]/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <p className="font-serif text-lg text-[#C9A96E]">{proc.name}</p>
+                    <p className="font-sans text-sm text-[#94a3b8] italic">{proc.tagline}</p>
                   </div>
                 </div>
                 <div className="p-8">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Clock, CheckCircle, ArrowLeft, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 const procedures = [
-  { id: 'rhinoplasty', name: 'Rhinoplasty (Nose Job)', tagline: 'Redefine your profile with precision', description: 'Rhinoplasty reshapes the nose to improve harmony with facial features. Dr. Girish N. Mirajkar performs both open and closed rhinoplasty, addressing a prominent hump, wide nostrils, a drooping tip, or breathing difficulties. The result is a nose that looks as though you were born with it.', benefits: ['Corrects structural asymmetries', 'Improves nasal tip definition', 'Reduces or refines nasal bridge', 'Can address breathing obstruction', 'Permanent, natural-looking results'], recovery: '7-14 days', anaesthesia: 'General' },
-  { id: 'facelift', name: 'Facelift (Rhytidectomy)', tagline: 'Turn back the clock naturally', description: 'A facelift addresses sagging skin, deepened folds, and loss of facial volume that comes with ageing. Dr. Girish N. Mirajkar uses the SMAS technique to lift underlying muscle as well as skin, ensuring results that last 8-12 years without the pulled, over-operated look.', benefits: ['Addresses mid-face and jowl laxity', 'Restores jawline definition', 'SMAS-layer technique for longevity', 'Can be combined with neck lift', 'Natural, rested appearance'], recovery: '10-21 days', anaesthesia: 'General / IV Sedation' },
-  { id: 'blepharoplasty', name: 'Blepharoplasty (Eyelid Surgery)', tagline: 'Open, bright, refreshed eyes', description: 'Blepharoplasty removes excess skin, fat, and muscle from the upper and/or lower eyelids, addressing drooping lids, under-eye bags, and a tired appearance. Dr. Girish N. Mirajkar places incisions that heal invisibly within natural skin folds.', benefits: ['Removes excess upper eyelid skin', 'Eliminates under-eye bags and puffiness', 'Scars hidden within eyelid creases', 'Can improve visual field', 'Quick procedure, lasting results'], recovery: '5-10 days', anaesthesia: 'Local / IV Sedation' },
-  { id: 'lip-augmentation', name: 'Lip Augmentation', tagline: 'Fuller, perfectly shaped lips', description: 'Lip augmentation enhances volume, definition, and symmetry using dermal fillers or fat transfer. Dr. Girish N. Mirajkar specialises in subtle enhancement that preserves lip movement. Both temporary (hyaluronic acid) and permanent (fat transfer) options are available.', benefits: ['Custom volume and shape enhancement', 'Natural lip movement preserved', 'Option of temporary or permanent results', 'Corrects lip asymmetry', 'No downtime with filler option'], recovery: '1-3 days (filler) / 5-7 days (fat transfer)', anaesthesia: 'Topical / Local' },
+  { id: 'rhinoplasty', image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80', imageAlt: 'Rhinoplasty nose job surgery consultation', name: 'Rhinoplasty (Nose Job)', tagline: 'Redefine your profile with precision', description: 'Rhinoplasty reshapes the nose to improve harmony with facial features. Dr. Girish N. Mirajkar performs both open and closed rhinoplasty, addressing a prominent hump, wide nostrils, a drooping tip, or breathing difficulties. The result is a nose that looks as though you were born with it.', benefits: ['Corrects structural asymmetries', 'Improves nasal tip definition', 'Reduces or refines nasal bridge', 'Can address breathing obstruction', 'Permanent, natural-looking results'], recovery: '7-14 days', anaesthesia: 'General' },
+  { id: 'facelift', image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80', imageAlt: 'Facelift rhytidectomy anti-aging surgery', name: 'Facelift (Rhytidectomy)', tagline: 'Turn back the clock naturally', description: 'A facelift addresses sagging skin, deepened folds, and loss of facial volume that comes with ageing. Dr. Girish N. Mirajkar uses the SMAS technique to lift underlying muscle as well as skin, ensuring results that last 8-12 years without the pulled, over-operated look.', benefits: ['Addresses mid-face and jowl laxity', 'Restores jawline definition', 'SMAS-layer technique for longevity', 'Can be combined with neck lift', 'Natural, rested appearance'], recovery: '10-21 days', anaesthesia: 'General / IV Sedation' },
+  { id: 'blepharoplasty', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80', imageAlt: 'Blepharoplasty eyelid surgery consultation', name: 'Blepharoplasty (Eyelid Surgery)', tagline: 'Open, bright, refreshed eyes', description: 'Blepharoplasty removes excess skin, fat, and muscle from the upper and/or lower eyelids, addressing drooping lids, under-eye bags, and a tired appearance. Dr. Girish N. Mirajkar places incisions that heal invisibly within natural skin folds.', benefits: ['Removes excess upper eyelid skin', 'Eliminates under-eye bags and puffiness', 'Scars hidden within eyelid creases', 'Can improve visual field', 'Quick procedure, lasting results'], recovery: '5-10 days', anaesthesia: 'Local / IV Sedation' },
+  { id: 'lip-augmentation', image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80', imageAlt: 'Lip augmentation filler treatment', name: 'Lip Augmentation', tagline: 'Fuller, perfectly shaped lips', description: 'Lip augmentation enhances volume, definition, and symmetry using dermal fillers or fat transfer. Dr. Girish N. Mirajkar specialises in subtle enhancement that preserves lip movement. Both temporary (hyaluronic acid) and permanent (fat transfer) options are available.', benefits: ['Custom volume and shape enhancement', 'Natural lip movement preserved', 'Option of temporary or permanent results', 'Corrects lip asymmetry', 'No downtime with filler option'], recovery: '1-3 days (filler) / 5-7 days (fat transfer)', anaesthesia: 'Topical / Local' },
 ];
 
 const faqs = [
@@ -48,15 +49,20 @@ export default function FaceProceduresPage() {
       <section className="py-20 bg-[#0f1a2e]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-10">
-            {procedures.map((proc, index) => (
+            {procedures.map((proc) => (
               <div key={proc.id} id={proc.id} className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-start rounded-2xl border border-[#243355] overflow-hidden bg-[#1a2a45]">
-                <div className="min-h-[160px] sm:min-h-[220px] bg-gradient-to-br from-[#243355] to-[#0a1220] flex items-center justify-center p-6 sm:p-8">
-                  <div className="text-center">
-                    <div className="w-16 h-16 rounded-full bg-[#C9A96E]/20 border-2 border-[#C9A96E]/40 flex items-center justify-center mx-auto mb-3">
-                      <span className="font-serif text-xl text-[#C9A96E]">{index + 1}</span>
-                    </div>
-                    <p className="font-serif text-xl text-[#C9A96E]">{proc.name}</p>
-                    <p className="font-sans text-sm text-[#94a3b8] mt-1 italic">{proc.tagline}</p>
+                <div className="relative min-h-[220px] sm:min-h-[280px] overflow-hidden">
+                  <Image
+                    src={proc.image}
+                    alt={proc.imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1220]/80 via-[#0a1220]/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <p className="font-serif text-lg text-[#C9A96E]">{proc.name}</p>
+                    <p className="font-sans text-sm text-[#94a3b8] italic">{proc.tagline}</p>
                   </div>
                 </div>
                 <div className="p-8">
